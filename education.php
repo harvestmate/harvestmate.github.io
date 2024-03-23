@@ -41,7 +41,7 @@
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
-        <a href="index.php" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
             <img src="img/homeicon.png" alt="homelogo" class="homelogo">
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -49,20 +49,20 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.php" class="nav-item nav-link">Home</a>
-                <a href="about.php" class="nav-item nav-link">About</a>
-                <a href="service.php" class="nav-item nav-link">Services</a>
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="service.html" class="nav-item nav-link">Services</a>
                 <a href="" class="nav-item nav-link active">Educations</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                     <div class="dropdown-menu bg-light m-0">
-                        <a href="feature.php" class="dropdown-item">Features</a>
-						<a href="contact.php" class="dropdown-item">Contact</a>
-                        <a href="404.php" class="dropdown-item">404 Page</a>
+                        <a href="feature.html" class="dropdown-item">Features</a>
+						<a href="contact.html" class="dropdown-item">Contact</a>
+                        <a href="404.html" class="dropdown-item">404 Page</a>
                     </div>
                 </div>
             </div>
-            <a href="quote.php" class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">Get A Quote<i class="fa fa-arrow-right ms-3"></i></a>
+            <a href="quote.html" class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">Get A Quote<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
     </nav>
     <!-- Navbar End -->
@@ -74,7 +74,7 @@
             <h1 class="display-3 text-white mb-4 animated slideInDown">Training And Educations</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb justify-content-center mb-0">
-                    <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                     <li class="breadcrumb-item active" aria-current="page">Training And Educations</li>
                 </ol>
             </nav>
@@ -92,7 +92,7 @@
                 <div class="col-lg-7 col-md-6">
                     <div class="row g-3">
                         <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
-                            <a class="position-relative d-block overflow-hidden" href="cropsmanagmenttraining.php" onclick="showAlert()">
+                            <a class="position-relative d-block overflow-hidden" href="cropsmanagmenttraining.html" onclick="showAlert()">
                                 <img class="img-fluid" src="img/cat-1.jpg" alt="">
                                 <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
                                     <h5 class="m-0">Crops Management</h5>
@@ -101,7 +101,7 @@
                             </a>
                         </div>
                         <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
-                            <a class="position-relative d-block overflow-hidden" href="cropsmanagmenttraining.php" onclick="showAlert()">
+                            <a class="position-relative d-block overflow-hidden" href="cropsmanagmenttraining.html" onclick="showAlert()">
                                 <img class="img-fluid" src="img/cat-2.jpg" alt="">
                                 <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
                                     <h5 class="m-0">Basic Planting</h5>
@@ -110,7 +110,7 @@
                             </a>
                         </div>
                         <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
-                            <a class="position-relative d-block overflow-hidden" href="cropsmanagmenttraining.php" onclick="showAlert()">
+                            <a class="position-relative d-block overflow-hidden" href="cropsmanagmenttraining.html" onclick="showAlert()">
                                 <img class="img-fluid" src="img/cat-3.jpg" alt="">
                                 <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
                                     <h5 class="m-0">IOT Systems</h5>
@@ -121,7 +121,7 @@
                     </div>
                 </div>
                 <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
-                    <a class="position-relative d-block h-100 overflow-hidden" href="cropsmanagmenttraining.php" onclick="showAlert()">
+                    <a class="position-relative d-block h-100 overflow-hidden" href="cropsmanagmenttraining.html" onclick="showAlert()">
                         <img class="img-fluid position-absolute w-100 h-100" src="img/cat-4.jpg" alt="" style="object-fit: cover;">
                         <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin:  1px;">
                             <h5 class="m-0">Marketing</h5>
@@ -148,7 +148,7 @@
                         <div class="position-relative overflow-hidden">
                             <img class="img-fluid" src="img/course-1.jpg" alt="">
                             <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                                <a href="trainingvideo.php" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end"  style="border-radius: 40px;" onclick="showAlert()">Read More</a>
+                                <a href="trainingvideo.html" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end"  style="border-radius: 40px;" onclick="showAlert()">Read More</a>
                             </div>
                         </div>
                         <div class="text-center p-4 pb-0">
@@ -165,7 +165,7 @@
                         <div class="position-relative overflow-hidden">
                             <img class="img-fluid" src="img/course-2.jpg" alt="">
                             <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                                <a href="maintainence.php" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 40px;" onclick="showAlert()">Read More</a>
+                                <a href="maintainence.html" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 40px;" onclick="showAlert()">Read More</a>
                             </div>
                         </div>
                         <div class="text-center p-4 pb-0">
@@ -182,7 +182,7 @@
                         <div class="position-relative overflow-hidden">
                             <img class="img-fluid" src="img/course-3.jpg" alt="">
                             <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                                <a href="maintainence.php" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end"  style="border-radius: 40px;" onclick="showAlert()">Read More</a>
+                                <a href="maintainence.html" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end"  style="border-radius: 40px;" onclick="showAlert()">Read More</a>
                             </div>
                         </div>
                         <div class="text-center p-4 pb-0">
