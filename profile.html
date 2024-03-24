@@ -59,7 +59,7 @@
                 <div class="navbar-nav w-100">
                     <a href="dashboard.html" class="nav-item nav-link "><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
 					<a href="iot.html" class="nav-item nav-link ""><i class="fa fa-microchip me-2"></i>IOT</a>
-                    <a href="#" class="nav-item nav-link active"><i class="fa-solid fa-cart-shopping me-2"></i>Orders</a>
+                    <a href="order.html" class="nav-item nav-link"><i class="fa-solid fa-cart-shopping me-2"></i>Orders</a>
                     <a href="message.html" class="nav-item nav-link"><i class="fas fa-envelope me-2"></i>Community</a>
                 </div>
             </nav>
@@ -134,7 +134,7 @@
                             <span class="d-none d-lg-inline-flex">Tommy123</span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end bg-white border-0 rounded-0 rounded-bottom m-0">
-                            <a href="profile.html" class="dropdown-item">Update Profile</a>
+                            <a href="#" class="dropdown-item">Update Profile</a>
 							<a href="index.html" class="dropdown-item">Back To Menu</a>
                             <a href="#" class="dropdown-item" onclick="logout()">Log Out</a>
                         </div>
@@ -143,173 +143,40 @@
             </nav>
             <!-- Navbar End -->
 
-			<!-- Order Section Start -->
+			<!-- User Profile Section Start -->
 			<div class="container-fluid pt-4 px-4">
-				<div class="row g-4">
+				<div class="row">
 					<div class="col-lg-12">
 						<div class="h-100 bg-light rounded p-4">
-							<div class="d-flex align-items-center justify-content-between mb-2">
-							<h2 class="mb-3">Your Orders</h2>
-							<a href="#" class="mb-3">Show All</a>
-                            </div>
-							<!-- Sample Order List -->
-							<div class="border-bottom pb-4 mb-4">
-								<div class="d-flex justify-content-between">
-									<h6 class="mb-0">Order ID: 12345</h6>
-									<span>Status: Pending</span>
+							<h2 class="mb-4">Update Profile</h2>
+							<form>
+								<div class="mb-3">
+									<label for="fullName" class="form-label">Full Name</label>
+									<input type="text" class="form-control" id="fullName" placeholder="Tommy Bobby">
 								</div>
-								<p class="text-muted mb-2">Date: 2024-03-24</p>
-								<div class="d-flex justify-content-between">
-									<span>Product: Fertilizer</span>
-									<span>Quantity: 10 bags</span>
+								<div class="mb-3">
+									<label for="email" class="form-label">Email Address</label>
+									<input type="email" class="form-control" id="email" placeholder="tommy@gmail.com">
 								</div>
-								<div class="d-flex justify-content-between">
-									<span>Total Price: $100</span>
-									<span>Payment Status: Pending</span>
+								<div class="mb-3">
+									<label for="phone" class="form-label">Phone Number</label>
+									<input type="tel" class="form-control" id="phone" placeholder="01987685431">
 								</div>
-								<button type="button" class="btn btn-primary mt-3">Track Order</button>
-							</div>
-							<!-- End Sample Order List -->
+								<div class="mb-3">
+									<label for="address" class="form-label">Address</label>
+									<textarea class="form-control" id="address" rows="3" placeholder="Lorong Terbalik 69, Sarawak"></textarea>
+								</div>
+								<div class="mb-3">
+									<label for="password" class="form-label">Password</label>
+									<input type="password" class="form-control" id="password" placeholder="Enter your password">
+								</div>
+								<button type="submit" class="btn btn-primary">Update Profile</button>
+							</form>
 						</div>
 					</div>
 				</div>
 			</div>
-			<!-- Order Section End -->
-
-			<!-- Customer Orders Tracking Section Start -->
-			<div class="container-fluid pt-4 px-4">
-				<div class="row g-4">
-					<div class="col-lg-12">
-						<div class="h-100 bg-light rounded p-4">
-							<div class="d-flex align-items-center justify-content-between mb-2">
-							<h2 class="mb-3">Customer Orders</h2>
-							<a href="#" class="mb-3">Show All</a>
-                            </div>
-							<!-- Sample Order Tracking -->
-							<div class="border-bottom pb-4 mb-4">
-								<div class="d-flex justify-content-between">
-									<h6 class="mb-0">Order ID: 54321</h6>
-									<span>Status: Shipped</span>
-								</div>
-								<p class="text-muted mb-2">Date: 2024-03-20</p>
-								<div class="d-flex justify-content-between">
-									<span>Product: Seeds</span>
-									<span>Quantity: 100 packets</span>
-								</div>
-								<div class="d-flex justify-content-between">
-									<span>Total Price: $500</span>
-									<span>Payment Status: Paid</span>
-								</div>
-								<button type="button" class="btn btn-primary mt-3">View Details</button>
-							</div>
-							<!-- End Sample Order Tracking -->
-							<!-- Sample Order List -->
-							<div class="border-bottom pb-4 mb-4">
-								<div class="d-flex justify-content-between">
-									<h6 class="mb-0">Order ID: 67890</h6>
-									<span>Status: Pending</span>
-								</div>
-								<p class="text-muted mb-2">Date: 2024-03-24</p>
-								<div class="d-flex justify-content-between">
-									<span>Product: Cotton</span>
-									<span>Quantity: 10 bags</span>
-								</div>
-								<div class="d-flex justify-content-between">
-									<span>Total Price: $200</span>
-									<span>Payment Status: Pending</span>
-								</div>
-								<button type="button" class="btn btn-primary mt-3">Track Order</button>
-							</div>
-							<!-- End Sample Order List -->
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- Customer Orders Tracking Section End -->
-
-
-            <!-- Widgets Start -->
-            <div class="container-fluid pt-4 px-4">
-                <div class="row g-4">
-                    <div class="col-sm-12 col-md-6 col-xl-4">
-                        <div class="h-100 bg-light rounded p-4">
-                            <div class="d-flex align-items-center justify-content-between mb-2">
-                                <h6 class="mb-0">Quick Messages</h6>
-                                <a href="message.html">Show All</a>
-                            </div>
-                            <div class="d-flex align-items-center border-bottom py-3">
-                                <img class="rounded-circle flex-shrink-0" src="img/cat-2.jpg" alt="" style="width: 40px; height: 40px;">
-                                <div class="w-100 ms-3">
-                                    <div class="d-flex w-100 justify-content-between">
-                                        <h6 class="mb-0">Farmers Te..</h6>
-                                        <small>15 minutes ago</small>
-                                    </div>
-                                    <span>Gloria: Hello, there will upda...</span>
-                                </div>
-                            </div>
-                            <div class="d-flex align-items-center border-bottom py-3">
-                                <img class="rounded-circle flex-shrink-0" src="img/team-1.png" alt="" style="width: 40px; height: 40px;">
-                                <div class="w-100 ms-3">
-                                    <div class="d-flex w-100 justify-content-between">
-                                        <h6 class="mb-0">Syafiqah Fara..</h6>
-                                        <small>15 minutes ago</small>
-                                    </div>
-                                    <span>Short message goes here...</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-xl-4">
-                        <div class="h-100 bg-light rounded p-4">
-                            <div class="d-flex align-items-center justify-content-between mb-4">
-                                <h6 class="mb-0">Calendar</h6>
-                                <a href="">Show All</a>
-                            </div>
-                            <div id="calender"></div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-xl-4">
-                        <div class="h-100 bg-light rounded p-4">
-                            <div class="d-flex align-items-center justify-content-between mb-4">
-                                <h6 class="mb-0">To Do List</h6>
-                                <a href="">Show All</a>
-                            </div>
-                            <div class="d-flex mb-2">
-                                <input class="form-control bg-transparent" type="text" placeholder="Enter task">
-                                <button type="button" class="btn btn-primary ms-2">Add</button>
-                            </div>
-                            <div class="d-flex align-items-center border-bottom py-2">
-                                <input class="form-check-input m-0" type="checkbox">
-                                <div class="w-100 ms-3">
-                                    <div class="d-flex w-100 align-items-center justify-content-between">
-                                        <span>Pay Commissions</span>
-                                        <button class="btn btn-sm"><i class="fa fa-times"></i></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="d-flex align-items-center border-bottom py-2">
-                                <input class="form-check-input m-0" type="checkbox" checked>
-                                <div class="w-100 ms-3">
-                                    <div class="d-flex w-100 align-items-center justify-content-between">
-                                        <span><del>Meet Clients</del></span>
-                                        <button class="btn btn-sm"><i class="fa fa-times"></i></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="d-flex align-items-center border-bottom py-2">
-                                <input class="form-check-input m-0" type="checkbox" checked>
-                                <div class="w-100 ms-3">
-                                    <div class="d-flex w-100 align-items-center justify-content-between">
-                                        <span><del>Crop Plant</del></span>
-                                        <button class="btn btn-sm text-primary"><i class="fa fa-times"></i></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Widgets End -->
+			<!-- User Profile Section End -->
 
             <!-- Footer Start -->
             <div class="container-fluid pt-4 px-4">

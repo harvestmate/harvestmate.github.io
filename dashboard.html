@@ -58,10 +58,9 @@
                 </div>
                 <div class="navbar-nav w-100">
                     <a href="#" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
-                    <a href="maintainence.php" class="nav-item nav-link" onclick="showAlert()"><i class="fa-solid fa-cart-shopping me-2"></i>Orders</a>
-                    <a href="maintainence.php" class="nav-item nav-link" onclick="showAlert()"><i class="fas fa-envelope me-2"></i>Messages</a>
-					<a href="maintainence.php" class="nav-item nav-link" onclick="showAlert()"><i class="fas fa-warehouse me-2"></i>Inventory</a>
 					<a href="iot.html" class="nav-item nav-link ""><i class="fa fa-microchip me-2"></i>IOT</a>
+                    <a href="order.html" class="nav-item nav-link"><i class="fa-solid fa-cart-shopping me-2"></i>Orders</a>
+                    <a href="message.html" class="nav-item nav-link"><i class="fas fa-envelope me-2"></i>Community</a>
                 </div>
             </nav>
         </div>
@@ -136,7 +135,7 @@
                             <span class="d-none d-lg-inline-flex">Tommy123</span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end bg-white border-0 rounded-0 rounded-bottom m-0">
-                            <a href="404.html" class="dropdown-item">My Profile</a>
+                            <a href="profile.html" class="dropdown-item">Update Profile</a>
 							<a href="index.html" class="dropdown-item">Back To Menu</a>
                             <a href="#" class="dropdown-item" onclick="logout()">Log Out</a>
                         </div>
@@ -287,15 +286,14 @@
             </div>
             <!-- Recent Sales End -->
 
-
             <!-- Widgets Start -->
             <div class="container-fluid pt-4 px-4">
                 <div class="row g-4">
                     <div class="col-sm-12 col-md-6 col-xl-4">
                         <div class="h-100 bg-light rounded p-4">
                             <div class="d-flex align-items-center justify-content-between mb-2">
-                                <h6 class="mb-0">Messages</h6>
-                                <a href="">Show All</a>
+                                <h6 class="mb-0">Quick Messages</h6>
+                                <a href="message.html">Show All</a>
                             </div>
                             <div class="d-flex align-items-center border-bottom py-3">
                                 <img class="rounded-circle flex-shrink-0" src="img/cat-2.jpg" alt="" style="width: 40px; height: 40px;">
@@ -322,7 +320,7 @@
                     <div class="col-sm-12 col-md-6 col-xl-4">
                         <div class="h-100 bg-light rounded p-4">
                             <div class="d-flex align-items-center justify-content-between mb-4">
-                                <h6 class="mb-0">Calender</h6>
+                                <h6 class="mb-0">Calendar</h6>
                                 <a href="">Show All</a>
                             </div>
                             <div id="calender"></div>
@@ -371,7 +369,6 @@
             </div>
             <!-- Widgets End -->
 
-
             <!-- Footer Start -->
             <div class="container-fluid pt-4 px-4">
                 <div class="bg-white rounded-top p-4">
@@ -404,11 +401,7 @@
 
     <!-- Template Javascript -->
     <script src="js/dashboard.js"></script>
-		<script>
-  function showAlert() {
-    alert("The features will come soon, stay tuned!");
-  }
-</script>
+
 </body>
 
 </html>

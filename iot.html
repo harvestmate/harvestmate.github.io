@@ -58,10 +58,9 @@
                 </div>
                 <div class="navbar-nav w-100">
                     <a href="dashboard.html" class="nav-item nav-link "><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
-                    <a href="maintainence.php" class="nav-item nav-link" onclick="showAlert()"><i class="fa-solid fa-cart-shopping me-2"></i>Orders</a>
-                    <a href="maintainence.php" class="nav-item nav-link" onclick="showAlert()"><i class="fas fa-envelope me-2"></i>Messages</a>
-					<a href="maintainence.php" class="nav-item nav-link" onclick="showAlert()"><i class="fas fa-warehouse me-2"></i>Inventory</a>
 					<a href="#" class="nav-item nav-link active""><i class="fa fa-microchip me-2"></i>IOT</a>
+                    <a href="order.html" class="nav-item nav-link"><i class="fa-solid fa-cart-shopping me-2"></i>Orders</a>
+                    <a href="message.html" class="nav-item nav-link"><i class="fas fa-envelope me-2"></i>Community</a>
                 </div>
             </nav>
         </div>
@@ -135,7 +134,7 @@
                             <span class="d-none d-lg-inline-flex">Tommy123</span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end bg-white border-0 rounded-0 rounded-bottom m-0">
-                            <a href="404.html" class="dropdown-item">My Profile</a>
+                            <a href="profile.html" class="dropdown-item">Update Profile</a>
 							<a href="index.html" class="dropdown-item">Back To Menu</a>
                             <a href="#" class="dropdown-item" onclick="logout()">Log Out</a>
                         </div>
@@ -143,115 +142,102 @@
                 </div>
             </nav>
             <!-- Navbar End -->
-            <div class="container-fluid pt-4 px-4">
-                <div class="row g-4">
-			<div class="col-sm-12 col-md-6 col-xl-4">
-				<div class="h-100 bg-light rounded p-4">
-					<h6 class="mb-4">Live Feed</h6>
-					<img src="img/backyard.jpeg" class="img-fluid" alt="Camera Feed">
-				</div>
-			</div>
-			</div>
-			</div>
 
-            <!-- Environment Start -->
+			<!-- Widgets Start -->
 			<div class="container-fluid pt-4 px-4">
-            <div class="row g-4">
-			<div class="col-sm-12 col-md-6 col-xl-4">
-				<div class="h-100 bg-light rounded p-4">
-					<h6 class="mb-4">Environment Monitoring</h6>
-					<p>Temperature: <span id="temperature">25.5</span>°C</p>
-					<p>Humidity: <span id="humidity">60.2</span>%</p>
-				</div>
-			</div>
-			</div>
-			</div>
-            <!-- Environment End -->
+				<div class="row g-4">
+					<!-- Camera Feed -->
+					<div class="col-sm-12 col-md-12 col-xl-12">
+							<div class="h-100 bg-light rounded p-4 position-relative">
+							<h2 class="mb-4">Live Feed: Tommy's Backyard</h2>
+							<img src="img/backyard.jpeg" class="img-fluid" alt="Camera Feed" style="max-height: 500px; width: 100%;">
+						</div>
+					</div>
 
-			<!-- Soil Start -->
-			<div class="container-fluid pt-4 px-4">
-            <div class="row g-4">
-			<div class="col-sm-12 col-md-6 col-xl-4">
-			<div class="h-100 bg-light rounded p-4">
-				<h6 class="mb-4">Soil Moisture</h6>
-				<p>Moisture Level: <span id="moistureLevel">35.8</span>%</p>
-			</div>
-			</div>
-			</div>			
-			</div>
-			<!-- Soil End -->
+					<!-- Temperature Control -->
+					<div class="col-sm-12 col-md-6 col-xl-4">
+						<div class="h-100 bg-light rounded p-4">
+							<h6 class="mb-4">Temperature Control</h6>
+							<div class="form-check form-switch">
+								<input class="form-check-input" type="checkbox" id="temperatureSwitch">
+								<label class="form-check-label" for="lightSwitch">Turn Heat On/Off</label>
+							</div>
+						</div>
+					</div>
 
-            <!-- Waterlevel Start -->
-			<div class="container-fluid pt-4 px-4">
-            <div class="row g-4">
-			<div class="col-sm-12 col-md-6 col-xl-4">
-				<div class="h-100 bg-light rounded p-4">
-					<h6 class="mb-4">Water Level</h6>
-					<p>Current Level: <span id="waterLevel">65.2</span>%</p>
-				</div>
-			</div>
-			</div>			
-			</div>
-			<!-- Waterlevel End -->
+					<!-- Watering System -->
+					<div class="col-sm-12 col-md-6 col-xl-4">
+						<div class="h-100 bg-light rounded p-4">
+							<h6 class="mb-4">Watering System</h6>
+							<div class="form-check form-switch">
+								<input class="form-check-input" type="checkbox" id="wateringSwitch">
+								<label class="form-check-label" for="wateringSwitch">Turn Watering On/Off</label>
+							</div>
+						</div>
+					</div>
 
-			<!-- Pest Start -->
-			<div class="container-fluid pt-4 px-4">
-            <div class="row g-4">
-			<div class="col-sm-12 col-md-6 col-xl-4">
-				<div class="h-100 bg-light rounded p-4">
-					<h6 class="mb-4">Pest Detection</h6>
-					<p>Status: <span id="pestStatus">No pests detected</span></p>
-				</div>
-			</div>
-			</div>			
-			</div>
-			<!-- Pest End -->
+					<!-- Electric Conduction -->
+					<div class="col-sm-12 col-md-6 col-xl-4">
+						<div class="h-100 bg-light rounded p-4">
+							<h6 class="mb-4">Electric Conduction</h6>
+							<div class="form-check form-switch">
+								<input class="form-check-input" type="checkbox" id="electricSwitch">
+								<label class="form-check-label" for="wateringSwitch">Turn Electric On/Off</label>
+							</div>
+						</div>
+					</div>
 
-            <!-- Crop Health Start -->
-			<div class="container-fluid pt-4 px-4">
-            <div class="row g-4">
-			<div class="col-sm-12 col-md-6 col-xl-4">
-				<div class="h-100 bg-light rounded p-4">
-					<h6 class="mb-4">Crop Health</h6>
-					<p>Status: <span id="cropHealth">Healthy</span></p>
-				</div>
-			</div>
-			</div>			
-			</div>
-			<!-- Crop Health End -->
+					<!-- Environment Monitoring -->
+					<div class="col-sm-12 col-md-6 col-xl-4">
+						<div class="h-100 bg-light rounded p-4">
+							<h6 class="mb-4">Environment Monitoring</h6>
+							<p>Temperature: <span id="temperature">25.5</span>°C</p>
+						<p>Humidity: <span id="humidity">60.2</span>%</p>
+						</div>
+					</div>
 
-            <!-- Light Start -->
-            <div class="container-fluid pt-4 px-4">
-                <div class="row g-4">
-			<div class="col-sm-12 col-md-6 col-xl-4">
-				<div class="h-100 bg-light rounded p-4">
-					<h6 class="mb-4">Light Control</h6>
-					<div class="form-check form-switch">
-						<input class="form-check-input" type="checkbox" id="lightSwitch">
-						<label class="form-check-label" for="lightSwitch">Turn Light On/Off</label>
+					<!-- Soil Moisture -->
+					<div class="col-sm-12 col-md-6 col-xl-4">
+						<div class="h-100 bg-light rounded p-4">
+							<h6 class="mb-4">Soil Moisture</h6>
+							<p>Moisture Level: <span id="moistureLevel">35.8</span>%</p>
+						</div>
+					</div>
+
+					<!-- Water Level -->
+					<div class="col-sm-12 col-md-6 col-xl-4">
+						<div class="h-100 bg-light rounded p-4">
+							<h6 class="mb-4">Water Level</h6>
+							<p>Current Level: <span id="waterLevel">65.2</span>%</p>
+						</div>
+					</div>
+
+					<!-- Pest Detection -->
+					<div class="col-sm-12 col-md-6 col-xl-4">
+						<div class="h-100 bg-light rounded p-4">
+							<h6 class="mb-4">Pest Detection</h6>
+							<p>Status: <span id="pestStatus">No pests detected</span></p>
+						</div>
+					</div>
+
+					<!-- Crop Health -->
+					<div class="col-sm-12 col-md-6 col-xl-4">
+						<div class="h-100 bg-light rounded p-4">
+							<h6 class="mb-4">Crop Health</h6>
+							<p>Status: <span id="cropHealth">Healthy</span></p>
+						</div>
+					</div>
+
+					<!-- Weather Control -->
+					<div class="col-sm-12 col-md-6 col-xl-4">
+						<div class="h-100 bg-light rounded p-4">
+							<h6 class="mb-4">Current Weather</h6>
+							<p>Status: <span id="cropHealth">Windy</span></p>
+						</div>
 					</div>
 				</div>
 			</div>
-				</div>
-			</div>
-            <!-- Light End -->
-
-
-			<!-- Water Start -->
-			<div class="container-fluid pt-4 px-4">
-            <div class="row g-4">
-			<div class="col-sm-12 col-md-6 col-xl-4">
-				<div class="h-100 bg-light rounded p-4">
-					<h6 class="mb-4">Watering System</h6>
-					<div class="form-check form-switch">
-						<input class="form-check-input" type="checkbox" id="wateringSwitch">
-						<label class="form-check-label" for="wateringSwitch">Turn Watering On/Off</label>
-					</div>
-				</div>
-			</div>			
-			</div>			
-			</div>
-			<!-- Water End -->
+			<!-- Widgets End -->
 	
             <!-- Widgets Start -->
             <div class="container-fluid pt-4 px-4">
@@ -259,8 +245,8 @@
                     <div class="col-sm-12 col-md-6 col-xl-4">
                         <div class="h-100 bg-light rounded p-4">
                             <div class="d-flex align-items-center justify-content-between mb-2">
-                                <h6 class="mb-0">Messages</h6>
-                                <a href="">Show All</a>
+                                <h6 class="mb-0">Quick Messages</h6>
+                                <a href="message.html">Show All</a>
                             </div>
                             <div class="d-flex align-items-center border-bottom py-3">
                                 <img class="rounded-circle flex-shrink-0" src="img/cat-2.jpg" alt="" style="width: 40px; height: 40px;">
@@ -287,7 +273,7 @@
                     <div class="col-sm-12 col-md-6 col-xl-4">
                         <div class="h-100 bg-light rounded p-4">
                             <div class="d-flex align-items-center justify-content-between mb-4">
-                                <h6 class="mb-0">Calender</h6>
+                                <h6 class="mb-0">Calendar</h6>
                                 <a href="">Show All</a>
                             </div>
                             <div id="calender"></div>
