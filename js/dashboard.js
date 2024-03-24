@@ -169,3 +169,16 @@
 
 	// Update values every 5 seconds (example)
 	setInterval(updateSoilMoisture, 5000);
+
+	function updateWaterLevel() {
+		// Example value, replace with actual sensor data
+		var waterLevel = 65.2;
+
+		$('#waterLevel').text(waterLevel.toFixed(1));
+	}
+
+	// Call the function to update values initially
+	updateWaterLevel();
+
+	// Update values every 5 seconds (example)
+	setInterval(updateWaterLevel, 5000);
