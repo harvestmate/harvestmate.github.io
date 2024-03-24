@@ -7,7 +7,7 @@ Languages used:
 HTML
 CSS
 JavaScript
-PHP
+Bootstrap
 
 With HarvestMate, farmers can access real-time information on crop health, weather conditions, and pest outbreaks, empowering them to make informed decisions and optimize their farming practices. Our platform is designed to be user-friendly and accessible, catering to both newcomers and seasoned farmers alike.
 
